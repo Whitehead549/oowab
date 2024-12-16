@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header Section -->
+    <header class="flex flex-wrap items-center justify-between px-4 py-4 bg-[#E55A00] text-white md:px-6 lg:px-8">
+        <div class="text-xl md:text-2xl font-bold"><span class="text-white">O</span>Wab</div>
+        <nav class="md:w-auto w-full md:flex md:items-center hidden">
+            <ul class="flex flex-col md:flex-row gap-4 md:gap-6">
+                <li><a href="#" class="hover:text-gray-200">Home</a></li>
+                <li><a href="#" class="hover:text-gray-200">Shop</a></li>
+                <li><a href="#" class="hover:text-gray-200">Deals</a></li>
+                <li><a href="#" class="hover:text-gray-200">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="menu-btn" class="md:hidden block text-white hover:text-gray-200">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </header>
+
+    <section class="relative h-48 md:h-64 overflow-hidden">
+        <div id="carousel" class="absolute inset-0 flex transition-transform duration-1000">
+            <div class="min-w-full"><img src="./image/banner7.png" alt="Banner 1" class="w-full h-full object-cover"></div>
+            <div class="min-w-full"><img src="./image/banner4.png" alt="Banner 2" class="w-full h-full object-cover"></div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="px-6 md:px-20 my-12 bg-gray-100">
+        <h2 class="text-2xl md:text-4xl font-extrabold text-center mb-12 text-[#B44000] tracking-wide">
+            <span class="text-[#E55A00]">Shop</span> Categories
+        </h2>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Category Card Template -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="./image/Xiaomi 13.jpg" alt="Phones" class="w-full h-48 object-contain">
+                <div class="p-6">
+                    <h3 class="text-lg md:text-2xl font-bold text-center mb-4 text-gray-800">Phones</h3>
+                    <p class="text-sm md:text-base text-gray-700 text-center mb-4">Explore the latest smartphones at unbeatable prices.</p>
+                    <a href="https://phones.yourdomain.com" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
+                </div>
+            </div>
+            <!-- Repeat similar cards for other categories -->
+            <!-- Laptops -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="./image/hp-chromebook.webp" alt="Laptops" class="w-full h-48 object-contain">
+                <div class="p-6">
+                    <h3 class="text-lg md:text-2xl font-bold text-center mb-4 text-gray-800">Laptops</h3>
+                    <p class="text-sm md:text-base text-gray-700 text-center mb-4">Discover high-performance laptops for work and play.</p>
+                    <a href="https://laptops.yourdomain.com" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
+                </div>
+            </div>
+            <!-- Accessories -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="./image/watch_2.webp" alt="Accessories" class="w-full h-48 object-contain">
+                <div class="p-6">
+                    <h3 class="text-lg md:text-2xl font-bold text-center mb-4 text-gray-800">Accessories</h3>
+                    <p class="text-sm md:text-base text-gray-700 text-center mb-4">Browse a variety of accessories to complement your gadgets.</p>
+                    <a href="https://accessories.yourdomain.com" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#E55A00] text-white text-center py-8 mt-16">
+        <div class="flex justify-center gap-6 text-lg md:text-2xl mb-4">
+            <a href="#" class="hover:text-gray-200"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover:text-gray-200"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-gray-200"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="hover:text-gray-200"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p class="text-sm md:text-base font-medium">All Rights Reserved &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
