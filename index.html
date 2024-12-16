@@ -26,7 +26,9 @@
     <!-- Header Section -->
     <header class="flex flex-wrap items-center justify-between px-4 py-4 bg-[#E55A00] text-white md:px-6 lg:px-8">
         <div class="text-xl md:text-2xl font-bold"><span class="text-white">O</span>Wab</div>
-        <nav class="md:w-auto w-full md:flex md:items-center hidden">
+        
+        <!-- Navigation Menu (hidden on mobile, shown on larger screens) -->
+        <nav class="md:w-auto w-full md:flex md:items-center hidden md:block">
             <ul class="flex flex-col md:flex-row gap-4 md:gap-6">
                 <li><a href="#" class="hover:text-gray-200">Home</a></li>
                 <li><a href="#" class="hover:text-gray-200">Shop</a></li>
@@ -34,10 +36,26 @@
                 <li><a href="#" class="hover:text-gray-200">Contact</a></li>
             </ul>
         </nav>
+        
+        <!-- Hamburger Button (visible on mobile) -->
         <button id="menu-btn" class="md:hidden block text-white hover:text-gray-200">
             <i class="fas fa-bars text-2xl"></i>
         </button>
     </header>
+    
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden absolute top-16 left-0 w-full bg-[#E55A00] text-white shadow-lg z-10">
+        <ul class="flex flex-col gap-4 p-4">
+            <li><a href="#home" class="hover:text-gray-200">Home</a></li>
+            <li><a href="#shop" class="hover:text-gray-200">Shop</a></li>
+            <li><a href="#deals" class="hover:text-gray-200">Deals</a></li>
+            <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+        </ul>
+    </div>
+    
+
+    
+    
 
     <section class="relative h-48 md:h-64 overflow-hidden">
         <div id="carousel" class="absolute inset-0 flex transition-transform duration-1000">
@@ -58,7 +76,7 @@
                 <div class="p-6">
                     <h3 class="text-lg md:text-2xl font-bold text-center mb-4 text-gray-800">Phones</h3>
                     <p class="text-sm md:text-base text-gray-700 text-center mb-4">Explore the latest smartphones at unbeatable prices.</p>
-                    <a href="https://phones.yourdomain.com" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
+                    <a href="https://purchase.seleniumpower.com/" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
                 </div>
             </div>
             <!-- Repeat similar cards for other categories -->
@@ -68,7 +86,7 @@
                 <div class="p-6">
                     <h3 class="text-lg md:text-2xl font-bold text-center mb-4 text-gray-800">Laptops</h3>
                     <p class="text-sm md:text-base text-gray-700 text-center mb-4">Discover high-performance laptops for work and play.</p>
-                    <a href="https://laptops.yourdomain.com" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
+                    <a href="https://purchase.seleniumpower.com/" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
                 </div>
             </div>
             <!-- Accessories -->
@@ -77,9 +95,39 @@
                 <div class="p-6">
                     <h3 class="text-lg md:text-2xl font-bold text-center mb-4 text-gray-800">Accessories</h3>
                     <p class="text-sm md:text-base text-gray-700 text-center mb-4">Browse a variety of accessories to complement your gadgets.</p>
-                    <a href="https://accessories.yourdomain.com" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
+                    <a href="https://purchase.seleniumpower.com/" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
                 </div>
             </div>
+            <!-- repeted repeted repeted repeted-->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="./image/iPhone-14.webp" alt="Phones" class="w-full h-48 object-contain">
+                <div class="p-6">
+                    <h3 class="text-lg md:text-2xl font-bold text-center mb-4 text-gray-800">iPhones</h3>
+                    <p class="text-sm md:text-base text-gray-700 text-center mb-4">Explore the latest smartphones at unbeatable prices.</p>
+                    <a href="https://purchase.seleniumpower.com/" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
+                </div>
+            </div>
+            <!-- Repeat similar cards for other categories -->
+            <!-- Laptops -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="./image/Asus6.jpg" alt="Laptops" class="w-full h-48 object-contain">
+                <div class="p-6">
+                    <h3 class="text-lg md:text-2xl font-bold text-center mb-4 text-gray-800">Asus Laptops</h3>
+                    <p class="text-sm md:text-base text-gray-700 text-center mb-4">Discover high-performance laptops for work and play.</p>
+                    <a href="https://purchase.seleniumpower.com/" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
+                </div>
+            </div>
+            <!-- Accessories -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="./image/Apple4.jpg" alt="Accessories" class="w-full h-48 object-fit">
+                <div class="p-6">
+                    <h3 class="text-lg md:text-2xl font-bold text-center mb-4 text-gray-800">Apple Laptops</h3>
+                    <p class="text-sm md:text-base text-gray-700 text-center mb-4">High speed machintouch</p>
+                    <a href="https://purchase.seleniumpower.com/" class="block bg-[#E55A00] text-white text-center py-2 px-4 rounded-lg font-semibold hover:bg-[#b44000] transition shadow-md">Shop Now</a>
+                </div>
+            </div>
+
+            
         </div>
     </section>
 

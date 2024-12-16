@@ -12,3 +12,23 @@ function slideCarousel() {
 
 // Auto-slide every 2 seconds
 setInterval(slideCarousel, 2000);
+
+   
+
+
+// JavaScript to toggle the mobile menu visibility
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+// Toggle mobile menu when the hamburger button is clicked
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+
+// Close the mobile menu when a link is clicked
+const menuLinks = document.querySelectorAll("#mobile-menu a");
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden"); // Hide the mobile menu after clicking a link
+    });
+});
